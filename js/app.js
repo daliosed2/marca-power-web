@@ -7,7 +7,7 @@ const FEATURES = {
   contenidos: false,
   masterclass: false,
   comunidad: false,
-  equipo: false,      // ← pon true para mostrar “Conoce a los fundadores”
+  equipo: true,      // ← pon true para mostrar “Conoce a los fundadores”
   suscripcion: true,
   contacto: true,
 };
