@@ -4,9 +4,9 @@
 const FEATURES = {
   inicio: true,
   mision: true,
-  contenidos: true,
-  masterclass: true,
-  comunidad: true,
+  contenidos: false,
+  masterclass: false,
+  comunidad: false,
   equipo: false,      // ← pon true para mostrar “Conoce a los fundadores”
   suscripcion: true,
   contacto: true,
