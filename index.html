@@ -16,23 +16,47 @@
 </head>
 <body class="min-h-screen bg-white text-slate-900">
   <!-- Navbar -->
-  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/70 border-b border-slate-200">
-    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="#inicio" class="flex items-center gap-3">
-        <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-emerald-400 font-extrabold text-slate-900 shadow">MP</span>
-        <span class="font-semibold tracking-wide">Marca Power</span>
-      </a>
-      <ul class="hidden md:flex items-center gap-6 text-sm text-slate-700">
-        <li><a class="hover:text-slate-900" href="#mision">Misión</a></li>
-        <li><a class="hover:text-slate-900" href="#contenidos">Contenidos</a></li>
-        <li><a class="hover:text-slate-900" href="#masterclass">Masterclass</a></li>
-        <li><a class="hover:text-slate-900" href="#comunidad">Comunidad</a></li>
-        <li><a class="hover:text-slate-900" href="#equipo">Equipo</a></li>
-        <li><a class="hover:text-slate-900" href="#contacto">Contacto</a></li>
-      </ul>
-      <a href="#suscripcion" class="hidden md:inline-flex items-center rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold shadow hover:shadow-md transition">Suscríbete</a>
-    </nav>
-  </header>
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200 shadow-sm">
+  <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Marca -->
+    <a href="#inicio" class="flex items-center gap-3 group">
+      <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-emerald-400 text-slate-900 font-extrabold shadow ring-2 ring-cyan-200/60 group-hover:ring-emerald-200/60 transition">
+        MP
+      </span>
+      <span class="text-base md:text-lg font-bold tracking-tight text-slate-900 transition">
+        Marca Power
+      </span>
+    </a>
+
+    <!-- Menú -->
+    <ul class="hidden md:flex items-center gap-8">
+      <li>
+        <a href="#mision"
+           class="text-sm font-medium text-slate-600 hover:text-slate-900 underline-offset-8 decoration-2 decoration-transparent hover:decoration-cyan-400 transition">
+          Misión
+        </a>
+      </li>
+      <li>
+        <a href="#equipo"
+           class="text-sm font-medium text-slate-600 hover:text-slate-900 underline-offset-8 decoration-2 decoration-transparent hover:decoration-cyan-400 transition">
+          Equipo
+        </a>
+      </li>
+      <li>
+        <a href="#contacto"
+           class="text-sm font-medium text-slate-600 hover:text-slate-900 underline-offset-8 decoration-2 decoration-transparent hover:decoration-cyan-400 transition">
+          Contacto
+        </a>
+      </li>
+    </ul>
+
+    <!-- CTA -->
+    <a href="#suscripcion"
+       class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-cyan-600 to-emerald-600 text-white px-5 py-2.5 text-sm font-semibold shadow-lg hover:shadow-xl transition">
+      Suscríbete <span aria-hidden>→</span>
+    </a>
+  </nav>
+</header>
 
   <!-- Hero -->
   <section id="inicio" class="relative overflow-hidden">
