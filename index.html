@@ -221,25 +221,52 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-    <div class="rounded-3xl border border-slate-200 bg-white p-8 lg:px-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Contacto</h2>
-      <div class="mt-4 grid md:grid-cols-3 gap-6 text-sm">
-        <div>
-          <p class="text-slate-500">Correo</p>
-          <p class="font-medium">infomarcapower@gmail.com</p>
-        </div>
-        <div>
-          <p class="text-slate-500">Redes</p>
-          <p class="font-medium">YouTube · Instagram · TikTok · X</p>
-        </div>
-        <div>
-          <p class="text-slate-500">Ubicación</p>
-          <p class="font-medium">Ecuador · LATAM</p>
-        </div>
-      </div>
+  <!-- dentro de #contacto, sustituye el grid con esto -->
+<div class="mt-4 grid md:grid-cols-3 gap-6 text-sm">
+
+  <!-- Correo -->
+  <div>
+    <p class="text-slate-500">Correo</p>
+    <p class="font-medium">
+      <a
+        href="mailto:infomarcapower@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%20Marca%20Power,%0A%0AQuisiera%20saber%20más%20sobre..."
+        class="underline decoration-slate-300 hover:decoration-slate-500"
+        title="Enviar correo">
+        infomarcapower@gmail.com
+      </a>
+    </p>
+    <!-- Botón opcional -->
+    <div class="mt-2">
+      <a
+        href="mailto:infomarcapower@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%20Marca%20Power,%0A%0AQuisiera%20saber%20más%20sobre..."
+        class="inline-flex items-center rounded-xl bg-slate-900 text-white px-3 py-2 text-xs font-semibold shadow hover:shadow-md">
+        ✉️ Escribir correo
+      </a>
     </div>
-  </section>
+  </div>
+
+  <!-- Redes -->
+  <div>
+    <p class="text-slate-500">Redes</p>
+    <div class="flex flex-wrap gap-2 font-medium">
+      <a href="https://www.youtube.com/@MarcaPower" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center rounded-lg bg-white ring-1 ring-slate-200 px-3 py-1 hover:bg-slate-50">YouTube</a>
+      <a href="https://instagram.com/marcapower" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center rounded-lg bg-white ring-1 ring-slate-200 px-3 py-1 hover:bg-slate-50">Instagram</a>
+      <a href="https://tiktok.com/@marcapower" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center rounded-lg bg-white ring-1 ring-slate-200 px-3 py-1 hover:bg-slate-50">TikTok</a>
+      <a href="https://twitter.com/marcapower" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center rounded-lg bg-white ring-1 ring-slate-200 px-3 py-1 hover:bg-slate-50">X</a>
+    </div>
+    <!-- Cambia los usuarios/urls por los reales -->
+  </div>
+
+  <!-- Ubicación -->
+  <div>
+    <p class="text-slate-500">Ubicación</p>
+    <p class="font-medium">Ecuador · LATAM</p>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="pb-10 pt-6 border-t border-slate-200 text-center text-xs text-slate-500">
