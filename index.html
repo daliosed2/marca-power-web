@@ -24,10 +24,22 @@
   <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <!-- Marca -->
 <a href="#inicio" class="flex items-center gap-3 group">
-  <img src="img/logo/logo.png" alt="Marca Power"
-       class="h-10 w-10 rounded-lg shadow ring-2 ring-cyan-200/60 group-hover:ring-emerald-200/60 transition" />
+  <!-- Intento con tu PNG (rompe caché con ?v=5) -->
+  <img id="logo-img"
+       src="img/logo/logo.png?v=5"
+       alt="Marca Power"
+       class="h-10 w-10 rounded-lg shadow ring-2 ring-cyan-200/60 group-hover:ring-emerald-200/60 transition"
+       onerror="this.style.display='none'; document.getElementById('logo-fallback').classList.remove('hidden');" />
+
+  <!-- Fallback si la imagen no carga -->
+  <span id="logo-fallback"
+        class="hidden inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-emerald-400 text-slate-900 font-extrabold shadow ring-2 ring-cyan-200/60">
+    MP
+  </span>
+
   <span class="text-base md:text-lg font-bold tracking-tight text-slate-900">Marca Power</span>
 </a>
+
 
 
     <!-- Menú -->
